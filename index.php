@@ -11,9 +11,29 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
     <?php include "assets/header.php"; ?>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Оформление платной подписки</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Переведите на счет +79142788263 (сбербанк) сумму 100 рублей, после чего Вам будет выдана подписка в течении 15 минут.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Я перевел(а)</button>
+        </div>
+        </div>
+    </div>
+    </div>
 
     <div class="intro" id="intro">
         <div class="container">
@@ -64,16 +84,20 @@
         <div class="container">
             <div class="section__header">
                 <h1>Новости</h1>
-                <button>Сначало интересное</button>
-                <button>Сначало старое</button>
-                <button>Сначало новое</button>
-                <input placeholder="Поиск" type="text">
-                <button>Найти</button>
+                <button>Добавить новость</button>
             </div>
 
+            <form class="form" method="POST" action="add_new.php" enctype="multipart/form-data">
+                <input class="news__input" type="text" name="post_date" placeholder="Дата" required>
+                <input class="news__input" type="text" name="post_type" placeholder="Тип" required>
+                <input class="news__input" type="text" name="post_title" placeholder="Название" required>
+                <input name="post_img" type="file">
+                <textarea name="post_text" id="text" cols="30" rows="10" placeholder="Введите текст" required></textarea>
+                <input type="submit" class="news__button" value="Опубликовать">
+            </form>
 
             <?php
-                $query = "SELECT * FROM `news` ";
+                $query = "SELECT * FROM `news` ORDER BY news.id DESC";
                 $result = mysqli_query($conn,$query);
                 while($row = mysqli_fetch_array($result)) {
             ?>
@@ -115,7 +139,7 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/three.min.js"></script>
     <script src="js/vanta.globe.min.js"></script>
     <script>

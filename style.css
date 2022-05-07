@@ -39,6 +39,7 @@ body {
     z-index: 1000;
 }
 
+
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -47,6 +48,7 @@ body {
 
 .nav {
     font-size: 13px;
+    align-items: center;
 }
 .nav__link {
     display: inline-block;
@@ -62,7 +64,7 @@ body {
     right: auto;
     width: 100%;
     left: 0;
-  }
+}
 
 .nav__link:before {
     content: "";
@@ -80,6 +82,20 @@ body {
 
 .header__logo {
     width: 15%;
+}
+
+.btn__sub {
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 27px;
+    padding: 5px 10px 5px 10px;
+    transition: 0.3s;
+}
+.btn__sub:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.3s;
 }
 /* Intro */
 
@@ -153,6 +169,30 @@ body {
 }
 
 
+/* News form */
+.form {
+    background-color: #fff;
+    display: block;
+    border-radius: 27px;
+    padding: 60px;
+    width: 60%;
+    margin: 30px auto;
+    text-align: center;
+}
+.form input {
+    width: 50%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.form textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+}
 /* News */
 .section__news {
     background-color: #000;
