@@ -1,5 +1,5 @@
 <?php
-    $conn =mysqli_connect('localhost','root','','ustumsuu');
+    $conn=mysqli_connect('localhost','root','','ustumsuu');
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -84,16 +84,16 @@
         <div class="container">
             <div class="section__header">
                 <h1>Новости</h1>
-                <button>Добавить новость</button>
+                <button class="add__new">Добавить новость</button>
             </div>
 
             <form class="form" method="POST" action="add_new.php" enctype="multipart/form-data">
                 <input class="news__input" type="text" name="post_date" placeholder="Дата" required>
                 <input class="news__input" type="text" name="post_type" placeholder="Тип" required>
                 <input class="news__input" type="text" name="post_title" placeholder="Название" required>
-                <input name="post_img" type="file">
+                <input class="news__input" type="text" name="post_image" placeholder="URL изображения (только URL!)" required>
                 <textarea name="post_text" id="text" cols="30" rows="10" placeholder="Введите текст" required></textarea>
-                <input type="submit" class="news__button" value="Опубликовать">
+                <button class="news__button">Опубликовать</button>
             </form>
 
             <?php
@@ -143,6 +143,16 @@
     <script src="js/three.min.js"></script>
     <script src="js/vanta.globe.min.js"></script>
     <script>
+    form = document.querySelector('.form');
+    add_button = document.querySelector('.add__new');
+
+    add_button.onclick = function() {
+        if(form.style.display == 'block')
+          form.style.display = 'none';
+        else
+          form.style.display = 'block';
+    };
+
     VANTA.GLOBE({
         el: "#intro",
         mouseControls: true,
