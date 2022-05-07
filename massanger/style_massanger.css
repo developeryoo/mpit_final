@@ -1,0 +1,437 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'SF Pro Display';
+    line-height: 1.6;
+    font-size: 15px;
+    background: #000;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+}
+/* Header */
+.header {
+    width: 100%;
+    background-color: #000;
+    padding: 40px 0 40px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    width: 64px;
+    color: #fff;
+}
+.logo__link {
+    text-decoration: none;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 24px;
+}
+.logo img {
+    width: 40%;
+}
+.logo h1 {
+    max-width: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+/* Nav */
+.nav {
+    font-size: 16px;
+}
+.nav__input {
+    width: 868px;
+    padding: 20px;
+    border-radius: 27px;
+    border: none;
+    background: #fff;
+}
+
+
+/* Menu */
+.profile {
+    background: #fff;
+    border-radius: 27px;
+    padding: 20px 0;
+}
+.avatar {
+    background-color: #fff;
+    height: 150px;
+    width: 150px;
+    margin: 0 80px 10px 80px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.avatar img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.profile__name {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+.profile__date {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 0;
+}
+.profile__button {
+    padding: 10px 30px;
+    background-color: #000;
+    font-weight: 500;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 27px;
+    display: block;
+    margin: 20px auto;
+    transition: 0.3s;
+}
+.profile__button:hover {
+    background: none;
+    color: #000;
+    border: 2px solid #000;
+    transition: 0.3s;
+}
+
+/* Navigation */
+.navigation {
+    max-width: 100px;
+    margin-left: 30px;
+}
+.navigation a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 3rem;
+    transition: 0.2s;
+}
+.navigation a:hover {
+    opacity: 0.7;
+}
+
+
+
+/* News */
+.news__name {
+    margin-bottom: 20px;
+}
+.news__input {
+    width: 868px;
+    padding: 25px;
+    border: none;
+    border-radius: 27px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.news__name {
+    background:#fff;
+    border-radius: 27px;
+    width: 868px;
+}
+
+.news__text {
+    margin-bottom: 0;
+}
+.news__avatar {
+    background-color: #fff;
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin: 30px;
+}
+.news__avatar img {
+    width: 100%;
+}
+.news__image {
+    width: 100%;
+}
+.news__dec {
+    width: 100%;
+    height: 1px;
+}
+
+.like img {
+    width: 18px;
+    opacity: 0.8;
+}
+.like {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FF030380;
+    border: none;
+    margin-top: 10px;
+    border-radius: 27px;
+    padding: 5px 10px;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+.like:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.comment img {
+    width: 23px;
+    opacity: 0.8;
+}
+.comment {
+    font-size: 18px;
+    font-weight: 400;
+    color: #033AFF80;
+    border: none;
+    margin-top: 10px;
+    border-radius: 27px;
+    padding: 5px 10px;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+.comment:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.news__title {
+    font-size: 12px;
+    padding-top: 36px;
+}
+.news__title p {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+.news__title h1 {
+    font-size: 20px;
+}
+.news__init {
+    display: flex;
+}
+.news__text {
+    padding: 0 50px 50px 50px;
+}
+.news__img {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.news__button {
+    display: block;
+    font-weight: 500;
+    padding: 10px;
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 27px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    padding: 10px 30px;
+}
+.news__button:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.3s;
+}
+
+/* Cards */
+.cards__title {
+    font-size: 20px;
+    text-align: center;
+    margin: 35px 0 50px 0;
+    color: #fff;
+}
+.card__avatar {
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    margin: 0 80px 10px 80px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.card__avatar img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card__profile {
+    background: #fff;
+    border-radius: 27px;
+    padding: 20px 0;
+}
+.card__name {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+.card__date {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 0;
+}
+.card__button {
+    padding: 6px 30px;
+    background-color: #000;
+    font-weight: 500;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 27px;
+    display: block;
+    margin: 20px auto;
+    transition: 0.3s;
+}
+.card__button:hover {
+    background: none;
+    color: #000;
+    border: 2px solid #000;
+    transition: 0.3s;
+}
+
+/* More */
+
+.button__more {
+    padding: 6px 30px;
+    background: none;
+    font-weight: 500;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 27px;
+    display: block;
+    margin: 20px auto;
+    transition: 0.3s;
+    margin-top: 60px;
+}
+.button__more:hover {
+    background: none;
+    color: #000;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+
+.section {
+    background-color: #000;
+}
+
+
+
+
+
+
+/* Footer */
+
+.footer {
+    background-color: #000;
+}
+.footer__logo {
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+}
+.footer__menu {
+    padding: 100px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contacts a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+    line-height: 2;
+    transition: 0.3s;
+}
+
+.footer__contacts a:hover {
+    color: #fff;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.footer__contacts {
+    width: 200px;
+}
+
+.footer__contacts__2 a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+    line-height: 2;
+    transition: 0.3s;
+}
+
+.footer__contacts__2 a:hover {
+    color: #fff;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.footer__contacts__2 {
+    width: 300px;
+}
+
+.footer__contacts__3 a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.footer__contacts__3 a:hover {
+    color: #fff;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.footer__contacts__3 p {
+    color: white;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.footer__button {
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 15px;
+    background: none;
+    color: rgb(255, 255, 255);
+    border-radius: 1px;
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.footer__button:hover {
+    transition: 0.3s ease;
+    background-color: #fff;
+    color: #000;
+}
