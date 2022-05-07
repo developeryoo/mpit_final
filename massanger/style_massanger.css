@@ -9,6 +9,62 @@ body {
     background: #000;
 }
 
+/* Media */
+
+@media screen and (max-width: 600px) {
+    html {
+        width: 100%;
+    }
+
+    .footer__menu {
+        display: block !important;
+    }
+
+    .footer__contacts {
+        padding-top: 30px;
+    }
+
+    .footer__contacts__2 {
+        padding-top: 30px;
+    }
+    .display-flex {
+        display: block !important;
+    }
+    .cards {
+        display: block !important;
+    }
+    .button__more {
+        margin: 0 auto !important;
+    }
+
+    .card__profile {
+        margin-bottom: 30px;
+    }
+    .nav__input {
+        width: 100% !important;
+    }
+    .logo {
+        display: none !important;
+    }
+    .header__inner {
+        justify-content: center !important;
+    }
+    .navigation {
+        margin-bottom: 50px;
+    }
+    .news__input {
+        width: 100% !important;
+    }
+    .news__name {
+        width: 100% !important;
+    }
+    .card__avatar {
+        margin: 0 auto !important;
+    }
+    .avatar {
+        margin: 0 auto !important;
+    }
+}
 .container {
     width: 100%;
     margin: 0 auto;
@@ -33,7 +89,6 @@ body {
 }
 .header__logo {
     width: 64px;
-    color: #fff;
 }
 .logo__link {
     text-decoration: none;
