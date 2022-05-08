@@ -35,11 +35,11 @@
     </div>
     </div>
 
-    <div class="intro__music">
+    <div class="intro__lang">
         <div class="container">
-            <div class="intro__music__inner">
+            <div class="intro__lang__inner">
                 <h1 class="intro__whales__label">Раздел</h1>
-                <h1 class="intro__whales__title">Музыка для всех</h1>
+                <h1 class="intro__whales__title">Три языка</h1>
             </div>
         </div>
     </div>
@@ -53,19 +53,19 @@
             </div>
 
 
-            <form class="form" method="POST" action="php/add_music.php" enctype="multipart/form-data">
-                <input class="news__input" type="text" name="music_date" placeholder="Дата" required>
-                <input class="news__input" type="text" name="music_type" placeholder="Тип" required>
-                <input class="news__input" type="text" name="music_title" placeholder="Название" required>
-                <input class="news__input" type="text" name="music_image" placeholder="URL изображения (только URL!)" required>
-                <textarea name="music_text" id="text" cols="30" rows="10" placeholder="Введите текст" required></textarea>
+            <form class="form" method="POST" action="php/add_lang.php" enctype="multipart/form-data">
+                <input class="news__input" type="text" name="lang_date" placeholder="Дата" required>
+                <input class="news__input" type="text" name="lang_type" placeholder="Тип" required>
+                <input class="news__input" type="text" name="lang_title" placeholder="Название" required>
+                <input class="news__input" type="text" name="lang_image" placeholder="URL изображения (только URL!)" required>
+                <textarea name="lang_text" id="text" cols="30" rows="10" placeholder="Введите текст" required></textarea>
                 <button class="news__button">Опубликовать</button>
             </form>
 
 
 
             <?php
-                $query = "SELECT * FROM `music` ORDER BY music.id DESC";
+                $query = "SELECT * FROM `lang` ORDER BY lang.id DESC";
                 $result = mysqli_query($conn,$query);
                 while($row = mysqli_fetch_array($result)) {
             ?>

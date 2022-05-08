@@ -49,31 +49,31 @@
             <div class="whale__music">
                 <div class="whale__header">
                     <h1 class="whale__title">Музыка для всех</h1>
-                    <a class="whale__link" href="#">Перейти></a>
+                    <a class="whale__link" href="music.php">Перейти></a>
                 </div>
             </div>
             <div class="whale__draw">
                 <div class="whale__header">
                     <h1 class="whale__title">Рисуем все</h1>
-                    <a class="whale__link" href="#">Перейти></a>
+                    <a class="whale__link" href="draw.php">Перейти></a>
                 </div>
             </div>
             <div class="whale__sport">
                 <div class="whale__header">
                     <h1 class="whale__title">Все в спорт</h1>
-                    <a class="whale__link" href="#">Перейти></a>
+                    <a class="whale__link" href="sport.php">Перейти></a>
                 </div>
             </div>
             <div class="whale__chess">
                 <div class="whale__header">
                     <h1 class="whale__title">Шахматы</h1>
-                    <a class="whale__link" href="#">Перейти></a>
+                    <a class="whale__link" href="chess.php">Перейти></a>
                 </div>
             </div>
             <div class="whale__languages">
                 <div class="whale__header">
                     <h1 class="whale__title">Три языка</h1>
-                    <a class="whale__link" href="#">Перейти></a>
+                    <a class="whale__link" href="lang.php">Перейти></a>
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@
                 <button class="add__new">Добавить новость</button>
             </div>
 
-            <form class="form" method="POST" action="add_new.php" enctype="multipart/form-data">
+            <form class="form" method="POST" action="php/add_new.php" enctype="multipart/form-data">
                 <input class="news__input" type="text" name="post_date" placeholder="Дата" required>
                 <input class="news__input" type="text" name="post_type" placeholder="Тип" required>
                 <input class="news__input" type="text" name="post_title" placeholder="Название" required>
