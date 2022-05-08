@@ -126,10 +126,7 @@ body {
     }
     .header__logo {
         margin: 0 auto;
-        width: 150px;
-    }
-    .header__logo img {
-        width: 100%;
+        width: 150px !important;
     }
     .intro__inner h1 {
         font-size: 30px;
@@ -441,7 +438,7 @@ body {
 }
 .new__body {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .new__image img {
     padding: 30px;
